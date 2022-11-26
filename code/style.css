@@ -1,0 +1,18 @@
+.main{
+    display:flex;
+}
+.nav{
+    display: flex;
+}
+
+ul{
+    list-style-type:none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+#main-menu{
+    display: flex;
+    justify-content: space-between;
+}

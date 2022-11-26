@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="top" class="navbar navbar-default navbar-fixed-top">
+        <div class="container main">
+            <div class="navbar-header">
+
+                <a class="navbar-brand logo" href="/"><img src="images/voer-new.png" alt="logovoer"></a>
+            </div>
+            <div class="search-collapse collapse  hidden-home ">
+                <div class="div-input-search left clear">
+                    <form action="/search/" method="GET">
+                        <input type="text" class="input-search-top" name="keyword" value="">
+                        <input type="submit" class="hfbtn-common search-index" value="search">
+                    </form>
+                </div>
+            </div>
+            <div id="main-menu" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav main-menu-nav">
+                    <li class="">
+                        <a href="/">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="/browse">Tra cứu Tài liệu</a>
+                    </li>
+                    <li>
+
+                        <a href="/content/dong-gop">Đóng góp</a>
+
+                    </li>
+                    <li>
+
+                        <a href="/content/gioi-thieu">Giới thiệu</a>
+
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right list-right-top hidden-sm">
+
+                    <li>&nbsp;</li>
+
+                    <li>
+                        <div class="collapse navbar-collapse bs-js-navbar-collapse">
+                            <ul>
+                                <li>
+                                    <form name="setLangVietnamese" action="/language/setlang/" method="POST"><input
+                                            type="hidden" name="csrfmiddlewaretoken"
+                                            value="bbF34wQ7015PBhvnL8XWx8byUdetximu">
+                                        <input name="next" type="hidden" value="/">
+                                        <input type="hidden" name="language" value="vi">
+                                        <a href="#" onclick="document.setLangVietnamese.submit();return false;"><img
+                                                src="/images/vi.jpg" alt="Tiếng Việt" title="Tiếng Việt"></a>
+                                    </form>
+                                </li>
+                                <li>
+                                    <form name="setLangEnglish" action="/language/setlang/" method="POST"><input
+                                            type="hidden" name="csrfmiddlewaretoken"
+                                            value="bbF34wQ7015PBhvnL8XWx8byUdetximu">
+                                        <input name="next" type="hidden" value="/">
+                                        <input type="hidden" name="language" value="en">
+                                        <a href="#" onclick="document.setLangEnglish.submit();return false;"><img
+                                                src="/images/us.png" alt="English" title="English"></a>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="/user/register">Đăng ký</a>
+                    </li>
+                    <li class="">
+                        <a class="btn-top-login" data-toggle="modal" data-target="#modal-user-login">Đăng nhập</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!--END RIGHT TOP-->
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
